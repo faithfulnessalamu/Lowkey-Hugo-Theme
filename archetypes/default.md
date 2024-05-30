@@ -1,12 +1,12 @@
 ---
 title: "{{ replace .Name '-' ' ' | title }}"
 date: {{ .Date }}
-draft: true # Set 'false' to publish
+draft: true
 description: ''
 categories:
-  - Uncategories
+  - Uncategorised
 tags:
-  -
+  - v1
 ---
 
 title: "{{ replace .Name "-" " " | title }}"

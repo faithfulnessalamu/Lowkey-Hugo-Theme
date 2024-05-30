@@ -1,4 +1,4 @@
-{{ $favicon := resources.GetMatch .Site.Params.favicon }}
+<!--{{ $favicon := resources.GetMatch .Site.Params.favicon }}-->
 
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,22 +11,4 @@
 <link rel="canonical" href="{{ .Permalink }}" />
 <link rel="robots" href="/robots.txt" />
 
-<link rel="icon" type="image/x-icon" href="{{ $favicon.RelPermalink }}" />
-
-{{ if .Site.GoogleAnalytics}}
-<!-- Google Analytics -->
-<script
-  defer
-  src="https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', '{{ .Site.GoogleAnalytics }}');
-</script>
-<!-- End Google Analytics -->
-{{ end }}
+<!--<link rel="icon" type="image/x-icon" href="{{ $favicon.RelPermalink }}" />-->
